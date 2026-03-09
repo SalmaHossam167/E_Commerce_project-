@@ -55,13 +55,17 @@ This project analyzes **99,441 orders** from Olist, Brazil's largest e-commerce 
 - Peak buying hour: **4:00 PM** | Peak day: **Monday**
 - **Health & Beauty** is the top revenue category (R$1.26M)
 - **96.9%** of customers buy only once → huge retention opportunity
-
+#### Dashboard Preview:
+![EDA Dashboard](EDA_Dashboard.png)
+![Products and Time Analysis](Analysis_Products_Time.png)
 ---
 
 ## 🤖 Machine Learning Models
 
 ### 1️⃣ Late Delivery Prediction
 **Goal:** Predict if an order will be delivered late (Binary Classification)
+#### Model Results Visualization:
+![ML Results](ML_Results.png)
 
 | Model | AUC Score | F1 Score |
 |-------|-----------|----------|
@@ -73,7 +77,8 @@ This project analyzes **99,441 orders** from Olist, Brazil's largest e-commerce 
 
 ### 2️⃣ Price Prediction
 **Goal:** Predict product price based on physical attributes & category
-
+#### Retention and Price Analysis:
+![Retention and Price](Analysis_Retention_Price.png)
 | Model | R² Score | MAE |
 |-------|----------|-----|
 | Linear Regression | 0.177 | R$64.50 |
