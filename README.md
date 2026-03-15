@@ -14,6 +14,7 @@ This project analyzes **99,441 orders** from Olist, Brazil's largest e-commerce 
 - 🚚 **Late Delivery Prediction** — predict if an order will be delayed before it happens
 - 💰 **Price Prediction** — estimate product price based on dimensions & category
 - 📊 **Business Intelligence** — customer behavior, sales trends & product analysis
+- 👥 **RFM Segmentation** — classify customers by behavior and generate actionable recommendations
 
 ---
 
@@ -87,6 +88,40 @@ This project analyzes **99,441 orders** from Olist, Brazil's largest e-commerce 
 
 ---
 
+## 👥 RFM Segmentation & Business KPIs
+
+#### RFM Dashboard:
+![RFM and KPIs](Analysis_RFM_KPIs.png)
+
+### Business KPIs
+
+| KPI | Value |
+|-----|-------|
+| 💵 ARPU | R$ 166.59 |
+| 📦 Avg Product Margin | 67.9% |
+| ➕ Avg Gross Adds | 3,844 new customers / month |
+| 🔴 Churn Rate | 96.9% |
+| 🟢 Retention Rate | 3.1% |
+
+### Customer Segments
+
+| Segment | Customers | Avg Revenue |
+|---------|-----------|-------------|
+| 🏆 Champions | 8,279 | R$ 339 |
+| 💚 Loyal Customers | 32,394 | R$ 217 |
+| 🌱 Potential Loyalists | 39,538 | R$ 130 |
+| ⚠️ At Risk | 12,644 | R$ 70 |
+| ❌ Lost Customers | 3,241 | R$ 48 |
+
+### Business Recommendations
+- **Champions** — Launch a VIP program with early access. They spend 2x more than average.
+- **Loyal Customers** — Introduce a loyalty points system and bundle discounts.
+- **Potential Loyalists** — Send a personalised follow-up email + 10% discount on second order. Converting this segment could increase revenue by ~25%.
+- **At Risk** — Win-back campaign with a limited-time offer and free shipping coupon.
+- **Lost Customers** — Last resort: 20-30% discount. Remove from marketing list if no response.
+
+---
+
 ## 📁 Project Structure
 
 ```
@@ -97,6 +132,7 @@ E_Commerce_project/
 ├── 📄 02_Feature_Engineering.py # Feature engineering (19 features)
 ├── 📄 03_ML_Model.py            # ML models - Late delivery prediction
 ├── 📄 04_Advanced_Analysis.py   # Products, time, retention & price prediction
+├── 📄 05_KPIs_RFM.py            # Business KPIs & RFM customer segmentation
 │
 ├── 📁 data/                     # Raw & cleaned CSV datasets
 └── 📁 outputs/                  # Generated charts & saved models
@@ -116,6 +152,7 @@ python 01_EDA.py
 python 02_Feature_Engineering.py
 python 03_ML_Model.py
 python 04_Advanced_Analysis.py
+python 05_KPIs_RFM.py
 ```
 
 ---
